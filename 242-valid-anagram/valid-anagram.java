@@ -10,10 +10,8 @@ class Solution {
         Arrays.sort(arr);
         Arrays.sort(arr2);
 
-        for(int i =0 ; i < arr.length ;i++){
-            if(arr[i] != arr2[i]){
+        if(!Arrays.equals(arr,arr2)){
                 return false;
-            }
         }
         return true;
     }
